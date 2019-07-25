@@ -25,11 +25,10 @@ body{
     background: rgba(53,71,125,0.5);
 }
 .kj{
-    margin: 0 auto;
-    margin-top: -150px;
-    position: relative; /*设置position属性*/
+    position: absolute;
     top: 50%;
-
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .anniu{
     height: 40px;
@@ -37,7 +36,7 @@ body{
     color:#2d3561;
     border-color: #35477d;
     background: rgba(234,234,234,0.5);
-    font-size: 25px;
+    font-size: 20px;
 }
 .anniu:hover{
     color:white;

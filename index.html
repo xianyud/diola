@@ -3,18 +3,15 @@
     <title>diola</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
 <h1 class="center">Salted Fish Search</h1>
-<table class="kj">
-    <tr>
-        <td>
-            <input type=text class="ssk" autocomplete="off" autofocus>
-        </td>
-        <td>
-            <button class="anniu">search</button>
-        </td>
-    </tr>
-</table>
+<div class="kj">
+    <form onsubmit="return search()">
+        <input type=text class="ssk" autocomplete="off" autofocus id="search_input">
+        <button class="anniu" onclick="return search()">search</button>
+    </form>
+</div>
 </body>
 </html>
