@@ -1,5 +1,9 @@
 body{
     background: #f4f4f4;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .center{
     text-align: center;
@@ -21,8 +25,11 @@ body{
     background: rgba(53,71,125,0.5);
 }
 .kj{
-    text-align: center;
     margin: 0 auto;
+    margin-top: -150px;
+    position: relative; /*设置position属性*/
+    top: 50%;
+
 }
 .anniu{
     height: 40px;
