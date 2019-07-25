@@ -5,11 +5,11 @@ body{
     margin: 0;
     padding: 0;
 }
-.center{
-    text-align: center;
-    font-size: 40px;
-    color: #35477d;
-}
+/*.center{*/
+/*    text-align: center;*/
+/*    font-size: 40px;*/
+/*    color: #35477d;*/
+/*}*/
 .ssk{
     height: 40px;
     font-size: 20px;
