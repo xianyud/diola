@@ -27,14 +27,14 @@ body{
 .anniu{
     height: 40px;
     width: 100px;
-    color:#293462;
+    color:#2d3561;
+    border-color: #35477d;
+    background: rgba(234,234,234,0.5);
     font-size: 25px;
-    border-color:#69779b;
-    background: rgba(192,192,192,0.3);
 }
 .anniu:hover{
-    background:rgba(53,71,125,0.5);
-    color: white;
+    color:white;
     border-color:#69779b;
+    background:rgba(45,53,97,0.5);
     transition-duration: 300ms;
 }
