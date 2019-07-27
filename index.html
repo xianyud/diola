@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/dhl.css">
+    <link rel="stylesheet" type="text/css" href="css/time.css">
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -11,14 +12,29 @@
 <ul id="menu">
     <ul>
         <li><a href="https://diolachiyu.github.io/xianyud/" target="_blank">DIO啦</a></li>
-        <li><a href="https://translate.google.cn/" target="_blank">谷歌翻译</a></li>
-        <li><a href="https://news.google.com/?hl=zh-CN&gl=CN&ceid=CN:zh-Hans" target="_blank">新闻</a></li>
-        <li><a href="https://colorhunt.co/" target="_blank">颜色狩猎</a></li>
-        <li><a href="https://www.bilibili.com/" target="_blank">B站</a></li>
-        <li><a href="https://wall.alphacoders.com/?lang=Chinese" target="_blank">壁纸</a></li>
+        <li><a href="https://colorhunt.co/" target="_blank">colorhunt</a></li>
+        <li><a href="https://www.bilibili.com/" target="_blank">BiliBili</a></li>
+        <li><a href="https://wall.alphacoders.com/?lang=Chinese" target="_blank">WALLPAPER ABYSS</a></li>
         <li><a href="https://github.com/" target="_blank">GitHub</a></li>
     </ul>
 </ul>
+<script>
+    var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+        clearTimeout(t);//清除定时器
+        dt = new Date();
+        var h=dt.getHours();//获取时
+        var m=dt.getMinutes();//获取分
+        var s=dt.getSeconds();//获取秒
+        document.getElementById("showTime").innerHTML =h+"时"+m+"分"+s+'秒';
+        t = setTimeout(time,1000); //设定定时器，循环运行
+    }
+</script>
+<div class="time">
+    <label id="showTime"></label>
+</div>
 <div class="kj">
     <form onsubmit="return search()">
         <input type=text class="ssk" autocomplete="off" autofocus id="search_input">

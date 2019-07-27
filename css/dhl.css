@@ -23,6 +23,6 @@
 }
 #menu li:hover{
     background:rgba(248,248,255,0.5);
-    transition-delay: 50ms;
+    /*transition-delay: 50ms;*/
     transition-duration: 300ms;
 }
