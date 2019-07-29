@@ -1,0 +1,19 @@
+.kjia{
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    color: #222222;
+    font-size: 30px;
+    background: rgba(173,216,230,0.2);
+    border-color: #696464;
+}
+.kjia:hover{
+    background:#17223b;
+    border-color: #f2f6f5;
+    color: #f2f6f5;
+    transition-delay: 50ms;
+    transition-duration: 500ms;
+}
+.tupian{
+    text-align: center;
+}
